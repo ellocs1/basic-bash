@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "Type "0" if you want to exit!"
+echo "1. Uptime"
+echo "2. Disk usage"
+echo "3. System users"
+echo "4. Memory usage"
+
+	read -p "What do you want to see? " number
+	
+	if [ "$number" -eq 1 ]; then
+		echo "Your system uptime is:"
+		uptime
+
+	elif [ "$number" -eq 2 ]; then
+		echo "Your system disk usage is:"
+		df -h
+
+	elif [ "$number" -eq 3 ]; then
+		echo "Your system users are:"
+		who
+	
+	elif [ "$number" -eq 4 ]; then
+		echo "Your system memory usage is:"
+		free -h
+	elif [ "$number" -eq 0 ]; then
+		exit
+	
+	else
+		echo "Invalid number."
+	fi
+

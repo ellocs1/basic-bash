@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while true; do
+	
+	echo "Bursuc activat"
+	mv *.png images
+	mv *.jpg images
+	mv *.jpeg images
+	mv *.webp images
+	sleep 1
+
+
+done
