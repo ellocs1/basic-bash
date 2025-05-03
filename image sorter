@@ -2,7 +2,8 @@
 
 while true; do
 	
-	echo "Bursuc activat"
+	echo "Image sorter is on!"
+	echo "If you want to stop press CTRL + C !"
 	mv *.png images
 	mv *.jpg images
 	mv *.jpeg images
