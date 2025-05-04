@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# This script will show if the sites are down or working
+
+sites=( "google.com" "facebook.com" "thisdomaindoesntexist.com" "github.com" "reddit.com" )
+
+for site in "${sites[@]}"; do
+	if ! ping -c 1 -W 2 "$site" > /dev/null 2>&1; then
+		echo "$site is down"
+	else
+		echo "$site is working"
+	fi
+done
