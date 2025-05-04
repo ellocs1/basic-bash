@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script moves all the images into a folder called "images" until you stop it
+
 while true; do
 	
 	echo "Image sorter is on!"

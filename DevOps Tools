@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# This script install all the basic tools used for DevOps
 				
 tools=( "git" "curl" "docker" "docker-compose" "jq" "htop" "vim" )
 

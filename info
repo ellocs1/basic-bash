@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# With this script you can see some informations about your system
+# The user can choose what information want to see
+
+
 echo "Type "0" if you want to exit!"
 echo "1. Uptime"
 echo "2. Disk usage"

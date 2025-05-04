@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Auto commit new files or modified files
+
 git add .
 git commit -m "Auto commit on $(date)"
 git push origin main
