@@ -1,0 +1,13 @@
+#!/bin/bash
+				
+tools=( "git" "curl" "docker" "docker-compose" "jq" "htop" "vim" )
+
+for tool in "${tools[@]}"; do
+	if ! command -v "$tool"; then
+		sudo apt update && sudo apt install -y "$tool"
+	else
+		echo "$tool is already installed."
+	fi
+done
+		
+
